@@ -26,11 +26,11 @@
 
  1. **Clone the Repository**
    ```bash
-     git clone https://github.com/VNWabule/phase-2-project-youth-job-connect
+    git clone https://github.com/VNWabule/phase-2-project-youth-job-connect
 
 2. **Install Dependencies**
    ```bash
-   npm install
+    npm install
 
 3. **Start the JSON Server**
    ```bash
