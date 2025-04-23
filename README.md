@@ -1,6 +1,6 @@
 # Youth Job Connect
 
-**Youth Job Connect** is a simple web app designed to help young people discover and apply for job opportunities in their community. It provides a platform where users can browse job listings, view job details, and submit applications—all in an easy-to-use interface.
+**Youth Job Connect** is a simple web app designed to help young people discover and apply for job opportunities in their community. It provides a platform where users can browse job listings, view job details, and submit applications all in an easy-to-use interface.
 
 
 ## 🌟 Features
