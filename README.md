@@ -2,7 +2,6 @@
 
 **Youth Job Connect** is a simple web app designed to help young people discover and apply for job opportunities in their community. It provides a platform where users can browse job listings, view job details, and submit applications—all in an easy-to-use interface.
 
----
 
 ## 🌟 Features
 
@@ -12,7 +11,6 @@
 - JSON server backend to simulate a real API
 - React frontend for dynamic and responsive UI
 
----
 
 ## 🛠️ Technologies Used
 
@@ -20,7 +18,6 @@
 - **Backend:** JSON Server (for simulating a RESTful API)
 - **Languages:** HTML, JavaScript, JSON, CSS
 
----
 
 ## 🚀 Getting Started
 
