@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
-
 const ApplicationForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     clientId: '',
-    dob: null,
+    dob: '',
     address: '',
     education: '',
   });
@@ -16,12 +15,14 @@ const ApplicationForm = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleDateChange = (date) => {
-    setFormData((prevData) => ({ ...prevData, dob: date }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!formData.dob) {
+      alert('Date of birth is required.');
+      return;
+    }
+
     console.log('Application data:', formData);
   };
 
@@ -67,14 +68,12 @@ const ApplicationForm = () => {
 
       <label>
         Date of Birth:* <br />
-        <DatePicker
-          selected={formData.dob}
-          onChange={handleDateChange}
-          dateFormat="yyyy-MM-dd"
-          placeholderText="Select your date of birth"
-          maxDate={new Date()}
-          showYearDropdown
-          scrollableYearDropdown
+        <input
+          type="date"
+          name="dob"
+          value={formData.dob}
+          onChange={handleChange}
+          max={new Date().toISOString().split('T')[0]}
           required
         />
       </label>
