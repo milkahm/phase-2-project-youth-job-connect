@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaInfoCircle, FaBriefcase, FaWpforms } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaBriefcase, FaWpforms, FaPlusCircle } from "react-icons/fa";
 import "./NavBar.css";
 
 function NavBar() {
@@ -24,6 +24,11 @@ function NavBar() {
       <NavLink to="/apply" className="nav-button">
         <FaWpforms className="nav-icon" />
         Apply
+      </NavLink>
+
+      <NavLink to="/add-job" className="nav-button add-job-button">
+        <FaPlusCircle className="nav-icon" />
+        Add Job
       </NavLink>
     </nav>
   );
